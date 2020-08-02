@@ -21,5 +21,5 @@ config = {
 
 def configure_app(app):
     config_name= os.getenv('FLASK_ENV')
-    app.config.from_object(config['default'])
+    app.config.from_object(config['production'])
     app.config.from_pyfile('application.cfg', silent=True)
