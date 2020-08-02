@@ -1,0 +1,14 @@
+<html>
+ <head>
+   <title>Todo List</title>
+
+    <script src='{{ url_for('static', filename='pj5_robot/p5.min.js') }}'></script>
+    <script src='{{ url_for('static', filename='pj5_robot/sketch.js') }}'></script>
+    <link rel='stylesheet' href='{{ url_for('static', filename='style.css') }}' />
+ </head>
+ <body>
+   {% block body %}
+   {% endblock %}
+
+   </body>
+</html>
